@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>เพื่อนที่ปรึกษา</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family: "Tahoma","Arial",sans-serif;
+  background:linear-gradient(135deg,#eef5ff,#fff4fa);
+  color:#24324a;
+  min-height:100vh;
+}
+header{
+  background:linear-gradient(135deg,#4778d8,#7659c9);
+  color:white;
+  padding:22px 7%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  box-shadow:0 4px 15px #0002;
+}
+.logo{font-size:25px;font-weight:bold}
+nav a{color:white;text-decoration:none;margin-left:24px;font-size:15px}
+nav a:hover{text-decoration:underline}
+.hero{
+  max-width:1100px;
+  margin:45px auto;
+  padding:35px 7%;
+  display:flex;
+  align-items:center;
+  gap:45px;
+}
+.hero-text{flex:1}
+.badge{
+  display:inline-block;
+  background:#ffe2ef;
+  color:#9a4270;
+  padding:8px 15px;
+  border-radius:30px;
+  font-size:14px;
+  margin-bottom:15px;
+}
+h1{font-size:46px;color:#304f9e;margin-bottom:15px}
+.hero p{font-size:18px;line-height:1.8;color:#59677d}
+.hero-art{
+  width:320px;height:250px;
+  background:white;
+  border-radius:35px;
+  box-shadow:0 12px 35px #5874aa33;
+  display:flex;align-items:center;justify-content:center;
+  font-size:105px;
+}
+.btn{
+  display:inline-block;margin-top:22px;
+  background:#4d72d8;color:white;
+  padding:12px 24px;border-radius:25px;
+  text-decoration:none;font-weight:bold;
+}
+section{max-width:1100px;margin:20px auto 55px;padding:0 25px}
+.section-title{text-align:center;color:#304f9e;font-size:30px;margin-bottom:25px}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+.card{
+  background:white;border-radius:22px;padding:25px;
+  box-shadow:0 7px 25px #50608018;
+  border:1px solid #e5eafb;
+  transition:.2s;
+}
+.card:hover{transform:translateY(-4px)}
+.icon{font-size:38px;margin-bottom:12px}
+.card h3{color:#405ea7;margin-bottom:8px}
+.card p{line-height:1.65;color:#667085;font-size:15px}
+.chat{
+  background:white;border-radius:25px;padding:25px;
+  box-shadow:0 7px 25px #50608018;
+  max-width:750px;margin:auto;
+}
+.message{padding:13px 17px;border-radius:18px;margin:10px 0;max-width:80%;line-height:1.5}
+.bot{background:#edf2ff;color:#38569c}
+.user{background:#ffe9f2;margin-left:auto;color:#934a6c}
+footer{text-align:center;padding:25px;background:#263d73;color:white;margin-top:30px}
+@media(max-width:800px){
+ .hero{flex-direction:column;text-align:center}
+ .cards{grid-template-columns:1fr}
+ nav{display:none}
+ h1{font-size:36px}
+ .hero-art{width:100%}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">💙 เพื่อนที่ปรึกษา</div>
+  <nav>
+    <a href="#home">หน้าหลัก</a>
+    <a href="#features">ฟีเจอร์</a>
+    <a href="#chat">ปรึกษา AI</a>
+    <a href="#about">เกี่ยวกับเรา</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-text">
+    <span class="badge">พื้นที่ปลอดภัยสำหรับทุกความรู้สึก</span>
+    <h1>เว็บเพื่อนที่ปรึกษา</h1>
+    <p>มีเรื่องอยากคุยหรือไม่รู้จะปรึกษาใคร? เว็บไซต์นี้ช่วยให้คุณพูดคุย ระบายความรู้สึก และค้นหาคำแนะนำเบื้องต้นได้ง่ายขึ้น</p>
+    <a class="btn" href="#chat">เริ่มปรึกษา 💬</a>
+  </div>
+  <div class="hero-art">🤖💬</div>
+</section>
+
+<section id="features">
+  <h2 class="section-title">ฟีเจอร์ของเว็บไซต์</h2>
+  <div class="cards">
+    <div class="card"><div class="icon">🤖</div><h3>AI เพื่อนที่ปรึกษา</h3><p>พูดคุยกับ AI และรับคำแนะนำเบื้องต้นเกี่ยวกับปัญหาต่าง ๆ</p></div>
+    <div class="card"><div class="icon">💬</div><h3>ห้องพูดคุย</h3><p>พื้นที่สำหรับพูดคุยและแลกเปลี่ยนความคิดเห็นอย่างเป็นมิตร</p></div>
+    <div class="card"><div class="icon">📚</div><h3>คลังคำแนะนำ</h3><p>รวมบทความและคำแนะนำเกี่ยวกับการเรียน เพื่อน ครอบครัว และชีวิตประจำวัน</p></div>
+    <div class="card"><div class="icon">🔒</div><h3>ความเป็นส่วนตัว</h3><p>ออกแบบระบบโดยคำนึงถึงความปลอดภัยและความเป็นส่วนตัวของผู้ใช้งาน</p></div>
+    <div class="card"><div class="icon">🔎</div><h3>ค้นหาหัวข้อปัญหา</h3><p>ค้นหาบทความหรือคำแนะนำตามหัวข้อที่ต้องการได้อย่างรวดเร็ว</p></div>
+    <div class="card"><div class="icon">⭐</div><h3>บันทึกคำแนะนำ</h3><p>บันทึกคำแนะนำที่สนใจไว้กลับมาอ่านภายหลัง</p></div>
+  </div>
+</section>
+
+<section id="chat">
+  <h2 class="section-title">ตัวอย่างการปรึกษา AI</h2>
+  <div class="chat">
+    <div class="message bot">สวัสดี 👋 มีเรื่องอะไรที่อยากพูดคุยหรือปรึกษาไหม?</div>
+    <div class="message user">ช่วงนี้รู้สึกกังวลเรื่องการเรียนมาก</div>
+    <div class="message bot">ลองแบ่งงานออกเป็นส่วนเล็ก ๆ และจัดลำดับสิ่งที่ต้องทำก่อนนะ คุณไม่จำเป็นต้องจัดการทุกอย่างพร้อมกัน 💙</div>
+  </div>
+</section>
+
+<section id="about">
+  <h2 class="section-title">เกี่ยวกับเว็บไซต์</h2>
+  <div class="card" style="text-align:center">
+    <p>“เพื่อนที่ปรึกษา” เป็น Web Application ที่ออกแบบมาเพื่อเป็นพื้นที่ให้ผู้ใช้งานได้พูดคุย ระบาย และค้นหาคำแนะนำเบื้องต้นได้สะดวก โดยมี AI เป็นผู้ช่วยในการสนทนา</p>
+  </div>
+</section>
+</main>
+
+<footer>💙 เพื่อนที่ปรึกษา — เพราะทุกปัญหามีคนพร้อมรับฟัง</footer>
+</body>
+</html>
